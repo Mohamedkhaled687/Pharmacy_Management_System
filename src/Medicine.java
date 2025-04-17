@@ -19,7 +19,6 @@ public class Medicine {
     private String companyName;
     private double price;
     private DateTimeFormatter dataFormatter = DateTimeFormatter.ofPattern("yyy-dd-MM");
-    private DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
 
     // Constructor
     public Medicine() {
