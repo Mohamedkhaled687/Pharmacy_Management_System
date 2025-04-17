@@ -21,6 +21,11 @@ public class Medicine {
     private DateTimeFormatter dataFormatter = DateTimeFormatter.ofPattern("yyy-dd-MM");
     private DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
 
+    // Constructor
+    public Medicine() {
+
+    }
+
     /**************************** Getters and Setters ****************************/
 
     // Setter and Getter for ID
@@ -55,8 +60,40 @@ public class Medicine {
         return quantity;
     }
 
+    // Setter and Getter for Manufacture Date
     public String getManufactureDate() {
         return dataFormatter.format(manufactureDate);
+    }
+
+    public void setManufactureDate(String manufactureDate) {
+        this.manufactureDate = LocalDate.parse(manufactureDate, dataFormatter);
+    }
+
+    // Setter and Getter for Expiration Date
+    public String getExpirationDate() {
+        return dataFormatter.format(expirationDate);
+    }
+
+    public void setExpirationDate(String expirationDate) {
+        this.expirationDate = LocalDate.parse(expirationDate, dataFormatter);
+    }
+
+    // Setter and Getter for Company Name
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    // Setter and Getter for Price
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
 }
