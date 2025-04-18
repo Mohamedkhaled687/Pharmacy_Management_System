@@ -12,9 +12,4 @@ public class Pharmacist extends Employee {
 
     }
 
-    @Override
-    void showOptions() {
-
-    }
-
 }
