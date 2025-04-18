@@ -30,7 +30,7 @@ public class Employee {
     public Employee() {
     };
 
-    /**************************** Getters and Setters ****************************/
+    /**************************** Setters and Getters ****************************/
 
     // Setter and Getter for ID
     public int getID() {
@@ -149,6 +149,16 @@ public class Employee {
 
     public void setOptions(Option[] options) {
         this.options = options;
+    }
+
+    // Getter for DataFormatter
+    public String getDataFormatter() {
+        return "yyyy-MM-dd";
+    }
+
+    // Getter for TimeFormatter
+    public String getTimeFormatter() {
+        return "HH:mm";
     }
 
 }

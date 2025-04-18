@@ -24,7 +24,7 @@ public class Medicine {
 
     }
 
-    /**************************** Getters and Setters ****************************/
+    /**************************** Setters and Getters ****************************/
 
     // Setter and Getter for ID
     public int getID() {
@@ -92,6 +92,12 @@ public class Medicine {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    // Getter for DataFormatter
+
+    public String getDataFormatter() {
+        return "yyyy-MM-dd";
     }
 
 }
