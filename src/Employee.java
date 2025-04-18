@@ -1,11 +1,12 @@
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 /*
  * @brief This is a class for an Employee Details
  * @author [Mohamed Khaled]
  * @date [2025-04-17]
  */
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Employee {
     // Attributes
