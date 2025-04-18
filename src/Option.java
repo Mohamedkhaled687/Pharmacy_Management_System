@@ -5,6 +5,11 @@
  * @date [2025-04-17]
  */
 
-public class Option {
+import java.util.Scanner;
 
+public interface Option {
+
+    abstract String toString();
+
+    abstract void operation(Database database, Scanner scanner, Employee employee);
 }

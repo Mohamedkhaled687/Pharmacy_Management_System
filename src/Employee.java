@@ -7,8 +7,9 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
-public class Employee {
+public abstract class Employee {
     // Attributes
     private int ID;
     private String firstName;
@@ -22,7 +23,7 @@ public class Employee {
     private int workHours;
     private LocalTime startTime;
     private LocalTime endTime;
-    private Option[] options;
+    protected Option[] options;
     private DateTimeFormatter dataFormatter = DateTimeFormatter.ofPattern("yyy-dd-MM");
     private DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
 
@@ -160,5 +161,16 @@ public class Employee {
     public String getTimeFormatter() {
         return "HH:mm";
     }
+
+    public void showOptions(Database database, Scanner scanner) {
+        for (int i = 0; i < options.length; i++) {
+            System.out.println((i + 1) + ". " + options[i]);
+        }
+        int choice = scanner.nextInt();
+        options[choice - 1].operation(database, scanner, this);
+        showOptions(database, scanner);
+    }
+
+    // abstract void showOptions();
 
 }
