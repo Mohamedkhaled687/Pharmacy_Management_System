@@ -12,6 +12,7 @@ public class CreateEmployee implements Option {
     @Override
 
     public void operation(Database database, Scanner scanner, Employee employee) {
+
     }
 
 }
