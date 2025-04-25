@@ -7,6 +7,10 @@
 	"settings": {
 		"cSpell.ignoreWords": [
 			"Khaled"
+		],
+		"java.project.sourcePaths": [
+			"src",
+			""
 		]
 	}
 }

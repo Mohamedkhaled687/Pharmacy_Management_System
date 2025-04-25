@@ -1,3 +1,4 @@
+package PharmacyManagmentSystem;
 
 /**
  * @brief Main Class

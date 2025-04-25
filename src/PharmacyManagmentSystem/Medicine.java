@@ -1,4 +1,6 @@
-/*
+package PharmacyManagmentSystem;
+
+/*  
  * @brief This is a class for a Medicine
  * @author [Mohamed Khaled]
  * @date [2025-04-17]

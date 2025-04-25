@@ -1,3 +1,5 @@
+package PharmacyManagmentSystem;
+
 /*
  * @brief This is a class for an Employee Details
  * @author [Mohamed Khaled]
@@ -16,7 +18,6 @@ public abstract class Employee {
     private String lastName;
     private String email;
     private String phoneNumber;
-    private String address;
     private String password;
     private double salary;
     private LocalDate birthDate;
@@ -76,15 +77,6 @@ public abstract class Employee {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-    }
-
-    // Setter and Getter for Address
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     // Setter and Getter for Password
@@ -164,13 +156,11 @@ public abstract class Employee {
 
     public void showOptions(Database database, Scanner scanner) {
         for (int i = 0; i < options.length; i++) {
-            System.out.println((i + 1) + ". " + options[i]);
+            System.out.println((i + 1) + ". " + options[i].toString());
         }
         int choice = scanner.nextInt();
         options[choice - 1].operation(database, scanner, this);
         showOptions(database, scanner);
     }
-
-    // abstract void showOptions();
 
 }
